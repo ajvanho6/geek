@@ -17,7 +17,7 @@ var postcss = require('gulp-postcss');
 var rucksack = require('rucksack-css');
 var pxtorem = require('postcss-pxtorem');
 var vr = require('postcss-vertical-rhythm');
-/*var simpleGrid = require('postcss-simple-grid');*/
+
 
 // paths
 var imgSrc = './images/src/*';
@@ -29,7 +29,6 @@ var sassDest = './css';
 
 gulp.task('sass', function () {
     var processors = [
-    /*  simpleGrid({separator: '--'}),*/
       rucksack({fallbacks:true,autoprefixer:true}),
       pxtorem({
         rootValue: 16,
@@ -41,7 +40,7 @@ gulp.task('sass', function () {
         minPixelValue: 0
       }),
       vr
-    ];  
+    ];
 gulp.src(sassSrc)
   .pipe(sourcemaps.init())
   .pipe(sass({
@@ -50,7 +49,8 @@ gulp.src(sassSrc)
   .pipe(autoprefixer('last 2 version'))
   .pipe(sourcemaps.write())
   .pipe(postcss(processors))
-  .pipe(gulp.dest(sassDest));
+  .pipe(gulp.dest(sassDest))
+  .pipe(browserSync.reload({stream:true}));
 });
 
 gulp.task('cssmin', function() {
@@ -89,19 +89,16 @@ gulp.task('bs-reload', function () {
     browserSync.reload();
 });
 
-// Run tasks without watching.
+/*// Run tasks without watching.
 gulp.task('build', function(callback) {
   runSequence('sass', 'imagemin', 'svgmin', 'cssmin', callback);
-});
+});*/
 
-// Rerun the task when a file changes
-gulp.task('watch', function() {
-  gulp.watch(sassSrc, ['sass']);
-  gulp.watch('./css/styles.css', ['cssmin']);
-  gulp.watch(imgSrc, ['imagemin']);
-  gulp.watch(svgSrc, ['svgmin']);
-});
-
-gulp.task('default', function(callback) {
-  runSequence('sass', 'imagemin', 'svgmin', 'cssmin', 'watch','browser-sync','bs-reload', callback);
+  //DEFAULT task
+gulp.task('default', ['sass','browser-sync','imagemin','svgmin', 'cssmin'], function () {
+    gulp.watch(sassSrc, ['sass']);
+    gulp.watch('./css/styles.css', ['cssmin']);
+    gulp.watch("./*.html", ['bs-reload']);
+    gulp.watch(imgSrc, ['imagemin']);
+    gulp.watch(svgSrc, ['svgmin']);
 });
