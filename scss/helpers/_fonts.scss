@@ -3,27 +3,39 @@
  * -------------------------- */
 
 @font-face {
-	font-family: 'Open Sans';
-	src: url('../fonts/OpenSans.eot');
-	src: url('../fonts/OpenSans.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/OpenSans.woff2') format('woff2'),
-		url('../fonts/OpenSans.woff') format('woff'),
-		url('../fonts/OpenSans.ttf') format('truetype'),
-		url('../fonts/OpenSans.svg#OpenSans') format('svg');
-	font-weight: normal;
-	font-style: normal;
+  font-family: 'Avenir Next Regular';
+  src: url('../fonts/AvenirNextLTPro-Regular.eot');
+  src: url('../fonts/AvenirNextLTPro-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/AvenirNextLTPro-Regular.woff2') format('woff2'),
+    url('../fonts/AvenirNextLTPro-Regular.woff') format('woff'),
+    url('../fonts/AvenirNextLTPro-Regular.ttf') format('truetype'),
+    url('../fonts/AvenirNextLTPro-Regular.svg#AvenirNextLTPro-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-	font-family: 'Museo Sans 500';
-	src: url('../fonts/MuseoSans-500.eot');
-	src: url('../fonts/MuseoSans-500.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/MuseoSans-500.woff2') format('woff2'),
-		url('../fonts/MuseoSans-500.woff') format('woff'),
-		url('../fonts/MuseoSans-500.ttf') format('truetype'),
-		url('../fonts/MuseoSans-500.svg#MuseoSans-500') format('svg');
-	font-weight: normal;
-	font-style: normal;
+  font-family: 'Avenir Next Medium';
+  src: url('../fonts/AvenirNextLTPro-MediumCn.eot');
+  src: url('../fonts/AvenirNextLTPro-MediumCn.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/AvenirNextLTPro-MediumCn.woff2') format('woff2'),
+    url('../fonts/AvenirNextLTPro-MediumCn.woff') format('woff'),
+    url('../fonts/AvenirNextLTPro-MediumCn.ttf') format('truetype'),
+    url('../fonts/AvenirNextLTPro-MediumCn.svg#AvenirNextLTPro-MediumCn') format('svg');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avenir Next Demi';
+  src: url('../fonts/AvenirNextLTPro-Demi.eot');
+  src: url('../fonts/AvenirNextLTPro-Demi.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/AvenirNextLTPro-Demi.woff2') format('woff2'),
+    url('../fonts/AvenirNextLTPro-Demi.woff') format('woff'),
+    url('../fonts/AvenirNextLTPro-Demi.ttf') format('truetype'),
+    url('../fonts/AvenirNextLTPro-Demi.svg#AvenirNextLTPro-Demi') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 
 
