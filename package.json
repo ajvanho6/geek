@@ -24,14 +24,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/ajvanho6/charity.git"
+    "url": "git+ssh://git@github.com/ajvanho6/geek.git"
   },
   "scripts": {
     "postinstall": "find node_modules/ -name \"*.info\" -type f -delete"
   },
-  "name": "charity-git",
-  "description": "Charity theme for drupal themer",
-  "homepage": "https://github.com/ajvanho6/charity#readme",
+  "name": "geek-git",
+  "description": "Geek bootstrap theme for drupal themer",
+  "homepage": "https://github.com/ajvanho6/geek#readme",
   "version": "1.0.0",
   "main": "gulpfile.js",
   "author": "Ivan Baresic",
