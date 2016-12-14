@@ -1,0 +1,42 @@
+/*GENERAl*/
+body{
+	font-family:$museo;
+	background: $gray;
+}
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+ul{
+	margin:0;
+	padding:0;
+	list-style-type: none;
+}
+
+a{
+	text-decoration:none;
+}
+
+a:hover{
+	cursor:pointer;
+}
+
+.centering{
+	display:flex;
+	justify-content:center;
+	align-items: center;
+}
+.upper{
+	text-transform:uppercase;
+}
+
+main{
+	width: 100%;
+	margin:0 auto;
+}
+
