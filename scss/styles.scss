@@ -1,6 +1,12 @@
+//General
 @import 'helpers/normalize';
 @import 'helpers/fonts';
 @import 'helpers/variables';
-@import "bootstrap/bootstrap";
+//BOOSTRAP
+@import "bootstrap-compass";
+@import "bootstrap-mincer";
+@import "bootstrap-sprockets";
+@import "bootstrap";
+//Layout
 /* @import 'layout/slick'; */
 @import 'layout/layout';
