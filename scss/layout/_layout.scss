@@ -48,6 +48,12 @@ section{
 	width: 100%;
 }
 
+.arrow-style{
+	display: block;
+	width:45px;
+	height:45px;
+}
+
 //Hero Logo
 
 .hero{
@@ -56,21 +62,72 @@ section{
 		@extend .centering;
 		flex-direction: column;
 
-		a{
-			display: block;
-		}
-		a img{
-			width:256px;
-			height: 132px;
-			display: block;
-		}
+			&__logo{
+				display: block;
+				margin-top: 10rem;
+
+				@media screen and(min-width: 1280px){
+					margin-top: 16rem;
+				}
+
+				@media screen and(min-width: 1440px){
+					margin-top: 20rem;
+				}
+			}
+
+			&__logo img{
+				width:256px;
+				height: 132px;
+				display: block;
+			}
+
+			p{
+				font-size: 20px;
+				color:$white;
+				max-width: 490px;
+	    		text-align: center;
+	    		margin:5rem 0;
+			}
+
+			&__arrow{
+				@extend .arrow-style;
+				margin-bottom: 2.5rem;
+				background: url('../images/Button@2x.png') no-repeat;
+				background-size: cover;
+				background-position: center;
+			}
+
+	}
+}
+
+//Design
+
+.design{
+	&__inner{
+		@extend .centering;
+		flex-direction: column;
 
 		p{
-			font-size: 20px;
-			color:$white;
-			max-width: 490px;
-    		text-align: center;
-    		margin:10rem 0;
+			font-size: 28px;
+			margin:2rem 0;
+		}
+
+		img{
+			display: block;
+			margin:9rem 0 4rem 0;
+		}
+
+		span{
+			color:$brand;
+		}
+
+		&__arrow{
+			display: block;
+			width: 54px;
+			height: 54px;
+			background: url('../images/Button-Red-copy@2x.png') no-repeat;
+			background-size: cover;
+			background-position: center;
 		}
 	}
 }
