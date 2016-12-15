@@ -12,9 +12,7 @@ body{
 	font-family:$font-r;
 	background: $gray-l;
 	font-size: inherit;
-
 }
-
 
 ul{
 	margin:0;
@@ -42,4 +40,37 @@ a:hover{
 main{
 	width: 100%;
 	margin:0 auto;
+}
+
+section{
+	max-width: $max-width;
+	margin:0 auto;
+	width: 100%;
+}
+
+//Hero Logo
+
+.hero{
+	&__inner{
+		background: $brand;
+		@extend .centering;
+		flex-direction: column;
+
+		a{
+			display: block;
+		}
+		a img{
+			width:256px;
+			height: 132px;
+			display: block;
+		}
+
+		p{
+			font-size: 20px;
+			color:$white;
+			max-width: 490px;
+    		text-align: center;
+    		margin:10rem 0;
+		}
+	}
 }
