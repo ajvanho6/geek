@@ -459,3 +459,9 @@ template {
 [hidden] {
   display: none;
 }
+
+
+.form-control::-webkit-input-placeholder { color: black !important; font-size:1rem !important; }
+.form-control:-moz-placeholder { color: black !important; font-size:1rem !important; }
+.form-control::-moz-placeholder { color: black !important; font-size:1rem !important; }
+.form-control:-ms-input-placeholder { color: black !important; font-size:1rem !important; }

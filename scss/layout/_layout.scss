@@ -54,6 +54,47 @@ section{
 	height:45px;
 }
 
+img{
+	max-width: 100%;
+	height: auto;
+}
+
+.slick-prev.slick-arrow{
+	position: absolute;
+	left: 0px;
+	top:33%;
+	z-index: 10;
+
+	@media screen and(min-width: 992px) {
+		left: 20px;
+	}
+
+	@media screen and(min-width: 1281px) {
+		left: 8px;
+	}
+}
+
+.slick-next.slick-arrow{
+	position: absolute;
+	right: 10px;
+	top:33%;
+	z-index: 10;
+
+	@media screen and(min-width: 992px) {
+		right: 20px;
+	}
+
+	@media screen and(min-width: 1281px) {
+		right: 8px;
+	}
+}
+
+.slick-slide img {
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+
 //Hero Logo
 
 .hero{
@@ -146,7 +187,7 @@ section{
 
 		img{
 			display: block;
-			margin:9rem 0 4rem 0;
+			margin:8rem 0 3rem 0;
 		}
 
 		span{
@@ -197,7 +238,7 @@ section{
 	}
 }
 
-//Both
+//SERVICES
 
 .services{
 	&__inner{
@@ -210,8 +251,8 @@ section{
 		h1{
 			font-size: 60px;
 			@media screen and(min-width: 992px){
-				margin-top: 75px;
-				margin-bottom:114px;
+				margin-top: 65px;
+				margin-bottom:115px;
 			}
 		}
 
@@ -220,7 +261,13 @@ section{
 			height: 186px;
 		}
 		&__text{
-			margin-top: 60px;
+			margin-top: 65px;
+		}
+
+		.col-md-3{
+			@media screen and(min-width: 992px){
+				margin-bottom: 110px;
+			}
 		}
 
 
@@ -236,3 +283,114 @@ section{
 		}
 	}
 }
+
+//CLIENTS
+
+.carousel{
+	&__inner{
+		overflow: hidden;
+		text-align: center;
+
+		h1{
+			font-size: 60px;
+			@media screen and(min-width: 992px){
+				margin-top: 65px;
+				margin-bottom:175px;
+			}
+		}
+
+
+		&__arrow{
+			display: block;
+			width: 45px;
+			height: 45px;
+			background: url('../images/Button-copy@2x.png') no-repeat;
+			background-size: cover;
+			background-position: center;
+			clear:both;
+			margin:175px auto 2.5rem auto;
+		}
+
+		&__slider{
+			margin: 70px 0;
+			visibility: hidden;
+		}
+	}
+
+}
+
+//Map
+.map{
+
+	&__inner{
+		overflow: hidden;
+		text-align: center;
+
+	h1{
+		font-size: 60px;
+			@media screen and(min-width: 992px){
+				margin-top: 65px;
+				margin-bottom:60px;
+		}
+	}
+
+	#map{
+		width: 100%;
+		height: 320px;
+		}
+	}
+
+	&__arrow{
+		display: block;
+		width: 54px;
+		height: 54px;
+		background: url('../images/Button-Red-copy@2x.png') no-repeat;
+		background-size: cover;
+		background-position: center;
+		margin: 60px auto 2.5rem auto;
+	}
+
+	div#bodyContent p{
+		text-align: left;
+		font-family:$font-r;
+		font-size: 16px;
+		margin:0;
+	}
+}
+
+
+
+//Contact
+
+.contact{
+	text-align: center;
+		h1{
+			font-size: 60px;
+			@media screen and(min-width: 992px){
+				margin-top: 65px;
+				margin-bottom:114px;
+			}
+	}
+	.form-control{
+		border:2px solid #cccccc;
+		padding: 23px 6px;
+	}
+	textarea{
+		resize:none;
+	}
+
+	button{
+		width: 100%;
+		background: $brand;
+		color:$white;
+		font-size: 16px;
+		padding: 15px 12px;
+	}
+
+	&__phone{
+		margin: 2rem auto 4rem auto;
+	}
+}
+
+.slick-initialized { visibility: visible; }
+
