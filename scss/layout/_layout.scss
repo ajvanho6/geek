@@ -150,7 +150,15 @@ img{
 
 		p{
 			font-size: 28px;
-			margin:2rem 0;
+			margin:2rem auto 12rem auto;
+			max-width: 400px;
+			text-align: center;
+
+			@media screen and(min-width: 992px){
+				max-width: none;
+				margin:2rem 0;
+				text-align: left;
+			}
 		}
 
 		img{
@@ -169,6 +177,11 @@ img{
 			background: url('../images/Button-Red-copy@2x.png') no-repeat;
 			background-size: cover;
 			background-position: center;
+			margin-bottom: 4.5rem;
+
+			@media screen and(min-width: 992px){
+				margin-bottom: 0rem;
+			}
 		}
 	}
 }
@@ -182,7 +195,15 @@ img{
 
 		p{
 			font-size: 28px;
-			margin:2rem 0;
+			margin:2rem auto 12rem auto;
+			max-width: 400px;
+			text-align: center;
+
+			@media screen and(min-width: 992px){
+				max-width: none;
+				margin:2rem 0;
+				text-align: left;
+			}
 		}
 
 		img{
@@ -201,6 +222,11 @@ img{
 			background: url('../images/Button-Red-copy@2x.png') no-repeat;
 			background-size: cover;
 			background-position: center;
+			margin-bottom: 4.5rem;
+
+			@media screen and(min-width: 992px){
+				margin-bottom: 0rem;
+			}
 		}
 	}
 }
@@ -214,7 +240,11 @@ img{
 
 		p{
 			font-size: 28px;
-			margin:2rem 0;
+			margin:2rem 0 12rem 0;
+
+			@media screen and(min-width: 992px){
+			  margin:2rem 0 2rem 0;
+			}
 		}
 
 		img{
@@ -233,7 +263,11 @@ img{
 			background: url('../images/Button-Red-copy@2x.png') no-repeat;
 			background-size: cover;
 			background-position: center;
-			margin-bottom: 2.5rem;
+			margin-bottom: 4.5rem;
+
+			@media screen and(min-width: 992px){
+				margin-bottom: 2.5rem;
+			}
 		}
 	}
 }
@@ -249,24 +283,58 @@ img{
 		text-align: center;
 
 		h1{
-			font-size: 60px;
+			font-size: 50px;
+			margin-top: 75px;
+			margin-bottom:65px;
+
 			@media screen and(min-width: 992px){
 				margin-top: 65px;
 				margin-bottom:115px;
+				font-size: 60px;
 			}
 		}
 
 		img{
-			width:186px;
-			height: 186px;
+			width:93px;
+			height: 93px;
+
+			@media screen and(min-width: 992px){
+				width:186px;
+				height: 186px;
+			}
 		}
 		&__text{
-			margin-top: 65px;
+			margin-top: 0px;
+			margin-bottom: 0px;
+			margin-left:24px;
+
+			@media screen and(min-width: 992px){
+				margin-top: 65px;
+				margin-bottom: 10px;
+				margin-left:0;
+			}
 		}
 
 		.col-md-3{
 			@media screen and(min-width: 992px){
 				margin-bottom: 110px;
+			}
+		}
+
+		.col-xs-12{
+			display: flex;
+			float:none;
+			align-items:center;
+			justify-content:left;
+			max-width: 300px;
+			margin:0 auto;
+			padding-bottom: 50px;
+
+			@media screen and(min-width: 992px){
+				display: block;
+				float:left;
+				max-width: 100%;
+				padding-bottom: 0px;
 			}
 		}
 
@@ -279,7 +347,11 @@ img{
 			background-size: cover;
 			background-position: center;
 			clear:both;
-			margin:0 auto 2.5rem auto;
+			margin:0 auto 4.5rem auto;
+
+			@media screen and(min-width: 992px){
+			    margin:0 auto 2.5rem auto;
+			}
 		}
 	}
 }
@@ -291,11 +363,20 @@ img{
 		overflow: hidden;
 		text-align: center;
 
-		h1{
-			font-size: 60px;
+		&__mobile{
 			@media screen and(min-width: 992px){
-				margin-top: 65px;
+				display: none;
+			}
+		}
+
+		h1{
+			font-size: 50px;
+			margin-top: 65px;
+			margin-bottom:190px;
+
+			@media screen and(min-width: 992px){
 				margin-bottom:175px;
+				font-size: 60px;
 			}
 		}
 
@@ -308,12 +389,20 @@ img{
 			background-size: cover;
 			background-position: center;
 			clear:both;
-			margin:175px auto 2.5rem auto;
+			margin:175px auto 4.5rem auto;
+
+			@media screen and(min-width: 992px){
+				margin: 175px auto 2.5rem auto;
+			}
 		}
 
 		&__slider{
-			margin: 70px 0;
+			margin: 125px 20px;
 			visibility: hidden;
+
+			@media screen and(min-width: 992px){
+				margin: 70px 0;
+			}
 		}
 	}
 
@@ -326,18 +415,36 @@ img{
 		overflow: hidden;
 		text-align: center;
 
-	h1{
-		font-size: 60px;
+
+		&__mobile{
 			@media screen and(min-width: 992px){
-				margin-top: 65px;
+				display: none;
+			}
+		}
+		&__desktop{
+			display: none;
+			@media screen and(min-width: 992px){
+				display: block;
+			}	
+		}	
+
+	h1{
+		font-size: 50px;
+		margin-top: 65px;
+		margin-bottom:70px;
+			@media screen and(min-width: 992px){
 				margin-bottom:60px;
+				font-size: 60px;
 		}
 	}
 
 	#map{
 		width: 100%;
-		height: 320px;
-		}
+		height: 720px;
+			@media screen and(min-width: 992px){
+				height: 320px;
+			}
+		}	
 	}
 
 	&__arrow{
@@ -347,7 +454,11 @@ img{
 		background: url('../images/Button-Red-copy@2x.png') no-repeat;
 		background-size: cover;
 		background-position: center;
-		margin: 60px auto 2.5rem auto;
+		margin: 60px auto 4.5rem auto;
+
+		@media screen and(min-width: 992px){
+			margin: 60px auto 2.5rem auto;
+		}
 	}
 
 	div#bodyContent p{
@@ -365,10 +476,11 @@ img{
 .contact{
 	text-align: center;
 		h1{
-			font-size: 60px;
+			font-size: 50px;
 			@media screen and(min-width: 992px){
 				margin-top: 65px;
 				margin-bottom:114px;
+				font-size: 60px;
 			}
 	}
 	.form-control{

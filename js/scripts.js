@@ -11,14 +11,7 @@ $('.carousel__inner__slider').slick({
   nextArrow:"<i class='fa fa-chevron-right slick-next' aria-hidden='true'></i>",
   responsive: [
     {
-      breakpoint: 736,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 1
-      }
-    },
-    {
-      breakpoint: 480,
+      breakpoint: 800,
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1
