@@ -16,6 +16,20 @@ $('.carousel__inner__slider').slick({
         slidesToShow: 1,
         slidesToScroll: 1
       }
+    },
+
+     {
+      breakpoint: 480,
+      	settings: {
+      	slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: true,
+        arrows:false,
+	    customPaging: function(slider, i) {
+	      // this example would render "tabs" with titles
+	      return '<span class="dot"></span>';
+	    },
+      }
     }
   ]
 
