@@ -489,6 +489,10 @@ img{
 	}
 	textarea{
 		resize:none;
+		height: 360px;
+		@media screen and(min-width: 992px){
+			height: auto;
+		}
 	}
 
 	button{
@@ -501,7 +505,30 @@ img{
 
 	&__phone{
 		margin: 2rem auto 4rem auto;
+		display: none;
+
+		@media screen and(min-width: 992px){
+			display: block;
+		}
 	}
+
+	&__mobile{
+		display: block;
+		text-align: center;
+
+			@media screen and(min-width: 992px){
+				display: none;
+			}
+
+		}
+	span.contact__mobile{
+		margin: 4rem auto 0.5rem auto;
+	}
+
+	a.contact__mobile{
+		margin: 0rem auto 5rem auto;
+		color:$gray-d;
+	}		
 }
 
 .slick-initialized { visibility: visible; }

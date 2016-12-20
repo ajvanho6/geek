@@ -241,6 +241,16 @@
   font-size: 24px;
 }
 
+.fa-envelope-o:before {
+    content: "\f003";
+     margin-right: 10px;
+}
+
+.fa-phone:before {
+    content: "\f095";
+     margin-right: 10px;
+}
+
 
 .sr-only {
   position: absolute;
